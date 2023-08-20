@@ -14,9 +14,9 @@ response_templates = {
 
 # Define intent patterns using spaCy's Matcher
 matcher = Matcher(nlp.vocab)
-matcher.add("TrackOrder", [{"LOWER": "track"}, {"LOWER": "order"}])
-matcher.add("Return", [{"LOWER": "return"}])
-matcher.add("ProductInfo", [{"LOWER": "product"}, {"LOWER": "information"}])
+matcher.add('TrackOrder', [[{'LOWER': 'track'}, {'LOWER': 'order'}]])
+matcher.add('Return', [[{'LOWER': 'return'}]])
+matcher.add('ProductInfo', [[{'LOWER': 'product'}, {'LOWER': 'information'}]])
 
 
 # Function to process user input and generate response
